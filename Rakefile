@@ -16,12 +16,12 @@ task :deletar_usuario do |_task|
   sh 'bundle exec cucumber -t @deletar_usuario'
 end
 
-task :todos_os_testes do |_task|
+task :testes_solicitados do |_task|
   puts 'Rodando os testes solicitados'
   sh 'bundle exec cucumber -t @teste'
 end
 
-task :todos_os_testes_criados do |_task|
+task :todos_os_testes do |_task|
   puts 'Rodando os testes criados'
   sh 'bundle exec cucumber'
 end
