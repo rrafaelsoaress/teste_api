@@ -1,4 +1,4 @@
-class PostPage
+class CriarPage
   include HTTParty
   attr_accessor :response
 

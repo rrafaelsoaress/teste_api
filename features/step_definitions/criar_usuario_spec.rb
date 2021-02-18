@@ -5,7 +5,7 @@ Dado('que eu tenha a rota de criação de Usuário') do
 end
 
 Quando('faço uma requisição com dados validos') do
-  @response = @post_page.create_valid_user
+  @response = @criar_page.create_valid_user
 end
 
 Entao('o usuário é criado') do
@@ -14,12 +14,12 @@ end
 
 Entao('é apresentado na listagem de usuários') do
   @id = parse_response(@response)['data']['id']
-  @response = @get_page.get_user_list(@id)
+  @response = @buscar_page.get_user_list(@id)
   expect(@response['data'][0]['id']).to eq @id
 end
 
 Quando('faço uma requisição com dados invalidos') do
-  @response = @post_page.create_invalid_user
+  @response = @criar_page.create_invalid_user
 end
 
 Entao('deve retornar codigo {string}') do |code|
