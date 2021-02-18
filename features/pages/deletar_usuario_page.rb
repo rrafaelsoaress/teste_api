@@ -1,4 +1,4 @@
-class DeletePage
+class DeletarPage
   include HTTParty
   attr_accessor :response
 

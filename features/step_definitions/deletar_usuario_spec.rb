@@ -13,10 +13,10 @@ end
 
 Quando('excluo o usuário') do
   @id = parse_response(@response)['data']['id']
-  @delete_page.delete_user(@id)
+  @deletar_page.delete_user(@id)
 end
 
 Entao('os dados são excluidos') do
-  @response = @get_page.get_user_list(@id)
+  @response = @buscar_page.get_user_list(@id)
   expect(@response['data']).to be_empty
 end
