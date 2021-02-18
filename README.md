@@ -13,7 +13,7 @@ Passada uma Collection do Postman, criar alguns cenários nas rotas da API. Para
 
 ## O que foi feito?
 Procurei utilizar as boas práticas para automação, o projeto possui a gem rubocop para análise e melhoria do código, utilizei a gem faker para criar dados aleatórios e também a gem rake para criar tarefas de testes.
-Utilizei PageObject para o mapeamento dos elementos e para criação de métodos que facilitam o desenvolvimento dos steps. Utilizei o Rspec para validações e também fiz validações com o próprio Watir.
+Utilizei PageObject para o mapeamento dos elementos e para criação de métodos que facilitam o desenvolvimento dos steps. Utilizei o Rspec para validações.
 
 ## Instalação
 
@@ -24,7 +24,7 @@ Para instalar recomendo o rbenv para gerenciar as versões
 
 2- Clonar o projeto do Github
 ```
-git clone git@github.com:rrafaelsoaress/teste_watir.git
+git clone git@github.com:rrafaelsoaress/teste_api.git
 ```
 3- Na pasta do projeto executar o bundle
 ```
