@@ -11,11 +11,11 @@ Quando('altero {string} com um valor') do |info|
 end
 
 Quando('faço a requisição') do
-  @response = @put_page.update_user(@user, @info)
+  @response = @atualizar_page.update_user(@user, @info)
 end
 
 Entao('os dados são alterados') do
-  @update = @put_page.validate_update(@response, @info)
-  @get_page.get_user(@user)
+  @update = @atualizar_page.validate_update(@response, @info)
+  @buscar_page.get_user(@user)
   expect(@data).not_to eq @update
 end

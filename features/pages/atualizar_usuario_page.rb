@@ -1,4 +1,4 @@
-class PutPage
+class AtualizarPage
   include Helpers
   include HTTParty
 
