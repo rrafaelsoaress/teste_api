@@ -10,9 +10,9 @@ module Helpers
     when 'email'
       parse_response(response)['data']['email']
     when 'sexo'
-      parse_response(@response)['data']['gender']
+      parse_response(response)['data']['gender']
     when 'status'
-      parse_response(@response)['data']['status']
+      parse_response(response)['data']['status']
     end
   end
 end

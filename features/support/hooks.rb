@@ -1,8 +1,8 @@
 require 'httparty'
 
 Before do
-  @delete_page = DeletePage.new
-  @get_page    = GetPage.new
-  @post_page   = PostPage.new
-  @put_page    = PutPage.new
+  @atualizar_page = AtualizarPage.new
+  @buscar_page    = BuscarPage.new
+  @criar_page     = CriarPage.new
+  @deletar_page   = DeletarPage.new
 end
