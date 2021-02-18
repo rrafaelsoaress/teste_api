@@ -2,7 +2,7 @@
 
 Desenvolvimento de um projeto de automação Back-end.
 
-Passada uma Collection do Postman, criar alguns cenários nas rotas da API. Para efetuas os testes utilizo o framework [HTTParty](https://github.com/jnunemaker/httparty) com linguagem [Ruby](https://www.ruby-lang.org/pt/about/)
+Passada uma Collection do Postman, criar alguns cenários nas rotas da API. Para efetuar os testes utilizo o framework [HTTParty](https://github.com/jnunemaker/httparty) com linguagem [Ruby](https://www.ruby-lang.org/pt/about/)
 
 ## Índice
 
@@ -12,7 +12,7 @@ Passada uma Collection do Postman, criar alguns cenários nas rotas da API. Para
 - [Testes](#testes)
 
 ## O que foi feito?
-Procurei utilizar as boas práticas para automação, o projeto possui a gem rubocop para análise e melhoria do código, utilizei a gem faker para criar dados aleatórios e também a gem rake para criar tarefas de testes.
+Utilizei as boas práticas para automação, o projeto possui a gem rubocop para análise e melhoria do código, utilizei a gem faker para criar dados aleatórios e também a gem rake para criar tarefas de testes.
 Utilizei PageObject para o mapeamento dos elementos e para criação de métodos que facilitam o desenvolvimento dos steps. Utilizei o Rspec para validações.
 
 ## Instalação
@@ -52,7 +52,7 @@ cucumber
 cucumber -t @tag
 ```
 
-Também foi criada rakes das funcionalidades, o codigo abaixo ira rodar os testes correspondentes a sua funcionalidade.
+Também foi criada rakes das funcionalidades, o código abaixo ira rodar os testes correspondentes a sua funcionalidade.
 ```
 1- Criar usuário
 rake criar_usuario
@@ -66,6 +66,6 @@ rake deletar_usuario
 4- Todos os testes do desafio
 rake todos_os_testes
 
-4- Todos os testes criados
+5- Todos os testes criados
 rake todos_os_testes_criados
 ```
