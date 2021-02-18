@@ -3,7 +3,7 @@ Dado('que eu tenha a rota de listagem') do
 end
 
 Quando('faço uma requisição') do
-  @response = @get_page.get_user_list
+  @response = @buscar_page.get_user_list
 end
 
 Entao('a listagem é apresentada') do

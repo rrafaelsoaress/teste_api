@@ -1,4 +1,4 @@
-class GetPage
+class BuscarPage
   include Helpers
   include HTTParty
   attr_accessor :response
